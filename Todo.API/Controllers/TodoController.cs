@@ -1,5 +1,8 @@
-﻿using MediatR;
+﻿using AutoMapper;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Todo.Application.DTOs;
+using Todo.Application.MediatRManagement.Commands;
 using Todo.Application.MediatRManagement.Query;
 
 namespace Todo.API.Controllers;
@@ -9,16 +12,27 @@ namespace Todo.API.Controllers;
 public class TodoController : ControllerBase
 {
     private readonly IMediator _mediator;
+    private readonly IMapper _mapper;
 
-    public TodoController(IMediator mediator)
+    public TodoController(IMediator mediator, IMapper mapper)
     {
         _mediator = mediator;
+        _mapper = mapper;
     }
 
     [HttpGet(Name = "GetAllTodos")]
     public async Task<ActionResult> GetAllTodos()
     {
         var lesTodos = await _mediator.Send(new GetTodosQuery());
-        return Ok(lesTodos);
+        var lesDtos = _mapper.Map<List<TodoDto>>(lesTodos);
+        return Ok(lesDtos);
+    }
+
+    [HttpPost(Name = "AddTodo")]
+    public async Task<ActionResult> AddTodo(TodoDto todoDto)
+    {
+        var todo = _mapper.Map<Core.Domain.Models.Todo>(todoDto);
+        var request = await _mediator.Send(new AddTodoCommand(todo));
+        return StatusCode(201, "todo bien ajouté");
     }
 }

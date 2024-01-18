@@ -21,6 +21,7 @@ builder.Services.AddDbContext<TodoDbContext>(opt =>
     opt.UseNpgsql(builder.Configuration.GetConnectionString("TodoDbConnection")));
 builder.Services.AddMediatR(typeof(Program));
 builder.Services.AddApplication();
+builder.Services.AddAutoMapper(typeof(Program));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
