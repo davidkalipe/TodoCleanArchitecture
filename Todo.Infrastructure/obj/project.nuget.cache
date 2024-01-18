@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ONweiVMkCzWoA4YhYCORzx1TmC4TsIcFnqJppa/BejBa2JM9UzRAqhYKgtwH62nQWuDGGi7H52qMbdKwz3VtNg==",
+  "dgSpecHash": "tmuxuLIziwsjAbXr49y9i+KWFAuBwDuWcT0ZSqmOnPeyoL2LczJH2RldqxbkMEI5fy9qy+2K9p5RO7lcF3w1pQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\kalip\\RiderProjects\\TodoCleanArchitecture\\Todo.Infrastructure\\Todo.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kalip\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\kalip\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\kalip\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\kalip\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\kalip\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.11\\microsoft.entityframeworkcore.7.0.11.nupkg.sha512",
     "C:\\Users\\kalip\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.11\\microsoft.entityframeworkcore.abstractions.7.0.11.nupkg.sha512",
     "C:\\Users\\kalip\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.11\\microsoft.entityframeworkcore.analyzers.7.0.11.nupkg.sha512",

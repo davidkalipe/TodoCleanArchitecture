@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "vqkgzqhxszC8aDPlaHPu1n6qZyujUYI/1hPKVao9A63nwUsfJiKuwIM4Ob5PyFSpkbTIww5p22GiMv/lr45M5A==",
+  "dgSpecHash": "+/tp0CXNJTU/LMbKLLiBrGuLWMoDMm28F7X4F55jYryEc5X5pDdGbwSreH1MoyMLnODXp9BOR6PiS5CZMQRFeA==",
   "success": true,
   "projectFilePath": "C:\\Users\\kalip\\RiderProjects\\TodoCleanArchitecture\\Todo.Application\\Todo.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\kalip\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\kalip\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\kalip\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
+    "C:\\Users\\kalip\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\kalip\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
     "C:\\Users\\kalip\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
     "C:\\Users\\kalip\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512"

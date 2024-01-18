@@ -12,15 +12,15 @@ public class TodoService : ITodoService
         _repo = repo;
     }
 
-    public List<Core.Domain.Models.Todo> GetAllTodo()
+    public async Task<List<Core.Domain.Models.Todo>> GetAllTodo()
     {
-        var lesTodo = _repo.GetAllTodo();
+        var lesTodo = await  _repo.GetAllTodo();
         return lesTodo;
     }
 
-    public bool AddTodo(Core.Domain.Models.Todo todo)
+    public async Task<bool> AddTodo(Core.Domain.Models.Todo todo)
     {
-        _repo.AddTodo(todo);
+        await _repo.AddTodo(todo);
         return true;
     }
 }

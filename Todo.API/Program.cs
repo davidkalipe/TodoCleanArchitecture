@@ -1,4 +1,6 @@
+using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Todo.Application;
 using Todo.Application.Interfaces;
 using Todo.Application.Repository;
 using Todo.Application.Services;
@@ -17,7 +19,8 @@ builder.Services.AddScoped<ITodoRepository, TodoRepository>();
 builder.Services.AddScoped<ITodoService, TodoService>();
 builder.Services.AddDbContext<TodoDbContext>(opt =>
     opt.UseNpgsql(builder.Configuration.GetConnectionString("TodoDbConnection")));
-
+builder.Services.AddMediatR(typeof(Program));
+builder.Services.AddApplication();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

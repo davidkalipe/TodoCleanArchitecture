@@ -1,5 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Todo.Application.Interfaces;
+﻿using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using Todo.Application.MediatRManagement.Query;
 
 namespace Todo.API.Controllers;
 
@@ -7,17 +8,17 @@ namespace Todo.API.Controllers;
 [Route("api/[controller]")]
 public class TodoController : ControllerBase
 {
-    private readonly ITodoService _todoService;
+    private readonly IMediator _mediator;
 
-    public TodoController(ITodoService todoService)
+    public TodoController(IMediator mediator)
     {
-        _todoService = todoService;
+        _mediator = mediator;
     }
 
     [HttpGet(Name = "GetAllTodos")]
-    public ActionResult GetAllTodos()
+    public async Task<ActionResult> GetAllTodos()
     {
-        var lesTodos = _todoService.GetAllTodo();
+        var lesTodos = await _mediator.Send(new GetTodosQuery());
         return Ok(lesTodos);
     }
 }

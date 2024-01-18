@@ -1,4 +1,5 @@
-﻿using Todo.Application.Repository;
+﻿using Microsoft.EntityFrameworkCore;
+using Todo.Application.Repository;
 using Todo.Infrastructure.Data;
 
 namespace Todo.Infrastructure.Repository;
@@ -12,15 +13,15 @@ public class TodoRepository : ITodoRepository
         _dbContext = dbContext;
     }
 
-    public List<Core.Domain.Models.Todo> GetAllTodo()
+    public async Task<List<Core.Domain.Models.Todo>> GetAllTodo()
     {
-        var lesTodo = _dbContext.Todos.ToList();
+        var lesTodo = await _dbContext.Todos.ToListAsync();
         return lesTodo;
     }
 
-    public bool AddTodo(Core.Domain.Models.Todo todo)
+    public async Task<bool> AddTodo(Core.Domain.Models.Todo todo)
     {
-        _dbContext.Todos.Add(todo);
+        await _dbContext.Todos.AddAsync(todo);
         return true;
     }
 }

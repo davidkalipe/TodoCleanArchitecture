@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "7QynNwgh7CS9eAWft7LTTsN0A8X3Fx6YVTjofGk56Ccrx71AsfxppaPURKlaYCU84T3gYHJNdArZPgFmcQsMHA==",
+  "dgSpecHash": "uOSiq8EdvLsMfXU++RfnOawWPRoRoYGuY3FOc8r6YRjiw8TokckMHKLosixpZYMzLgPDP2nJjFW/O6kr+qYw6Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\kalip\\RiderProjects\\TodoCleanArchitecture\\Todo.API\\Todo.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\kalip\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\kalip\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\kalip\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\kalip\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.12\\microsoft.aspnetcore.openapi.7.0.12.nupkg.sha512",
     "C:\\Users\\kalip\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.11\\microsoft.entityframeworkcore.7.0.11.nupkg.sha512",
     "C:\\Users\\kalip\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.11\\microsoft.entityframeworkcore.abstractions.7.0.11.nupkg.sha512",

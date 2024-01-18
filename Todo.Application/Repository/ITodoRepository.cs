@@ -2,6 +2,6 @@
 
 public interface ITodoRepository
 {
-    List<Core.Domain.Models.Todo> GetAllTodo();
-    bool AddTodo(Core.Domain.Models.Todo todo);
+    Task<List<Core.Domain.Models.Todo>> GetAllTodo();
+    Task<bool> AddTodo(Core.Domain.Models.Todo todo);
 }
