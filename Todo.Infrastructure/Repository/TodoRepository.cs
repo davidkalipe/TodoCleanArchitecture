@@ -22,6 +22,7 @@ public class TodoRepository : ITodoRepository
     public async Task<bool> AddTodo(Core.Domain.Models.Todo todo)
     {
         await _dbContext.Todos.AddAsync(todo);
+        await _dbContext.SaveChangesAsync();
         return true;
     }
 }
