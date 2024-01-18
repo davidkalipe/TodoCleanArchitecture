@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "hcMU1tls+6ANyb0vsYPUMJtDxZNJJGAWANecRdbF46JDqdzv9zOSmpxVrtLJPZdqPqEW9+Z373Zq+NEk0RST2g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kalip\\RiderProjects\\TodoCleanArchitecture\\Todo.Core\\Todo.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kalip\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\kalip\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\kalip\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}

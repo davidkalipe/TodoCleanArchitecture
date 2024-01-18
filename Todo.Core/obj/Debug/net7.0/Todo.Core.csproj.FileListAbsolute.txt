@@ -1,0 +1,11 @@
+C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Core\bin\Debug\net7.0\Todo.Core.deps.json
+C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Core\bin\Debug\net7.0\Todo.Core.dll
+C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Core\bin\Debug\net7.0\Todo.Core.pdb
+C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Core\obj\Debug\net7.0\Todo.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Core\obj\Debug\net7.0\Todo.Core.AssemblyInfoInputs.cache
+C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Core\obj\Debug\net7.0\Todo.Core.AssemblyInfo.cs
+C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Core\obj\Debug\net7.0\Todo.Core.csproj.CoreCompileInputs.cache
+C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Core\obj\Debug\net7.0\Todo.Core.dll
+C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Core\obj\Debug\net7.0\refint\Todo.Core.dll
+C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Core\obj\Debug\net7.0\Todo.Core.pdb
+C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Core\obj\Debug\net7.0\ref\Todo.Core.dll
