@@ -9,3 +9,4 @@ C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Core\obj\Debug\net7.0\To
 C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Core\obj\Debug\net7.0\refint\Todo.Core.dll
 C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Core\obj\Debug\net7.0\Todo.Core.pdb
 C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Core\obj\Debug\net7.0\ref\Todo.Core.dll
+C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Core\obj\Debug\net7.0\Todo.Core.sourcelink.json

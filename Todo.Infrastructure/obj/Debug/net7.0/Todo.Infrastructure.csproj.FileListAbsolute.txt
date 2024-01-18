@@ -17,3 +17,4 @@ C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Infrastructure\obj\Debug
 C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Infrastructure\obj\Debug\net7.0\Todo.Infrastructure.pdb
 C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Infrastructure\obj\Debug\net7.0\Todo.Infrastructure.genruntimeconfig.cache
 C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Infrastructure\obj\Debug\net7.0\ref\Todo.Infrastructure.dll
+C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Infrastructure\obj\Debug\net7.0\Todo.Infrastructure.sourcelink.json

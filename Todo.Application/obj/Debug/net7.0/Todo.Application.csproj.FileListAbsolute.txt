@@ -13,3 +13,4 @@ C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Application\obj\Debug\ne
 C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Application\obj\Debug\net7.0\refint\Todo.Application.dll
 C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Application\obj\Debug\net7.0\Todo.Application.pdb
 C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Application\obj\Debug\net7.0\ref\Todo.Application.dll
+C:\Users\kalip\RiderProjects\TodoCleanArchitecture\Todo.Application\obj\Debug\net7.0\Todo.Application.sourcelink.json
