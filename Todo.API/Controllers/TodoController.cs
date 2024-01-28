@@ -35,4 +35,11 @@ public class TodoController : ControllerBase
         var request = await _mediator.Send(new AddTodoCommand(todo));
         return StatusCode(201, "todo bien ajouté");
     }
+
+    [HttpPut(Name = "UpdateTodo")]
+    public async Task<ActionResult<TodoDto>> UpdateTodo(TodoDto todoDto)
+    {
+        var todo = _mapper.Map<Core.Domain.Models.Todo>(todoDto);
+        
+    }
 }

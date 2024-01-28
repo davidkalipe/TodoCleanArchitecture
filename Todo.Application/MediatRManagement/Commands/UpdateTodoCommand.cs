@@ -2,4 +2,4 @@
 
 namespace Todo.Application.MediatRManagement.Commands;
 
-public record AddTodoCommand(Core.Domain.Models.Todo Todo) : IRequest;
+public record UpdateTodoCommand(Core.Domain.Models.Todo Todo) : IRequest;

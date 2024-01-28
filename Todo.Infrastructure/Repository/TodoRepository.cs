@@ -25,4 +25,26 @@ public class TodoRepository : ITodoRepository
         await _dbContext.SaveChangesAsync();
         return true;
     }
+
+    public async Task<Core.Domain.Models.Todo> UpdateTodo(Core.Domain.Models.Todo todo)
+    {
+        var existing = await _dbContext.Todos.Where(t => t.Id == todo.Id).FirstOrDefaultAsync();
+        if (existing is null)
+            return null!;
+        
+        existing.Title = todo.Title;
+        existing.Description = todo.Description; 
+        existing.IsDone = todo.IsDone;
+        return existing;
+    }
+
+    public async Task<bool> DeleteTodo(Guid id)
+    {
+        var todo = await _dbContext.Todos.Where(t => t.Id == id).FirstOrDefaultAsync();
+        if(todo is null)
+            return false;
+        _dbContext.Remove(todo);
+        await _dbContext.SaveChangesAsync();
+        return true;
+    }
 }

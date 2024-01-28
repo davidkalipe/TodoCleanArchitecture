@@ -23,4 +23,18 @@ public class TodoService : ITodoService
         await _repo.AddTodo(todo);
         return true;
     }
+
+    public async Task<Core.Domain.Models.Todo> UpdateTodo(Core.Domain.Models.Todo todo)
+    {
+        var existing = await _repo.UpdateTodo(todo);
+        if (existing is null)
+            return null;
+        return existing;
+    }
+
+    public async Task<bool> DeleteTodo(Guid id)
+    {
+        await _repo.DeleteTodo(id);
+        return true;
+    }
 }
