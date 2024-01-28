@@ -37,9 +37,10 @@ public class TodoController : ControllerBase
     }
 
     [HttpPut(Name = "UpdateTodo")]
-    public async Task<ActionResult<TodoDto>> UpdateTodo(TodoDto todoDto)
+    public async Task<ActionResult<TodoDto>> UpdateTodo(Core.Domain.Models.Todo todo)
     {
-        var todo = _mapper.Map<Core.Domain.Models.Todo>(todoDto);
-        
+        var request = await _mediator.Send(new UpdateTodoCommand(todo));
+        var leDto = _mapper.Map<TodoDto>(request);
+        return Ok(leDto);
     }
 }
