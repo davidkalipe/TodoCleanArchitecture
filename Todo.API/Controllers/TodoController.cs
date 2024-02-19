@@ -25,22 +25,40 @@ public class TodoController : ControllerBase
     {
         var lesTodos = await _mediator.Send(new GetTodosQuery());
         var lesDtos = _mapper.Map<List<TodoDto>>(lesTodos);
+        string base64image = "";
         return Ok(lesDtos);
     }
 
-    [HttpPost(Name = "AddTodo")]
-    public async Task<ActionResult> AddTodo(TodoDto todoDto)
+    [HttpGet("GetTodoById{id}")]
+    public async Task<ActionResult> GetTodoById(Guid id)
     {
-        var todo = _mapper.Map<Core.Domain.Models.Todo>(todoDto);
-        var request = await _mediator.Send(new AddTodoCommand(todo));
+        var todo = await _mediator.Send(new GetTodoByIdQuery(id));
+        var dto = _mapper.Map<TodoDto>(todo);
+        string base64image = dto.ImageContentBase64;
+        byte[] Picture = Convert.FromBase64String(base64image);
+        return File(Picture, "image/png");
+
+    }
+
+    [HttpPost(Name = "AddTodo")]
+    public async Task<ActionResult> AddTodo([FromForm]TodoCreateDto todoCreateDto )
+    {
+        var file = todoCreateDto.File;
+        using (var ms = new MemoryStream())
+        {
+            file.CopyTo(ms);
+            var todo = _mapper.Map<Core.Domain.Models.Todo>(todoCreateDto);
+            todo.ImageContent = ms.ToArray();
+            await _mediator.Send(new AddTodoCommand(todo));
+        }
+        
         return StatusCode(201, "todo bien ajouté");
     }
 
     [HttpPut(Name = "UpdateTodo")]
-    public async Task<ActionResult<TodoDto>> UpdateTodo(Core.Domain.Models.Todo todo)
+    public async Task<ActionResult> UpdateTodo(Core.Domain.Models.Todo todo)
     {
         var request = await _mediator.Send(new UpdateTodoCommand(todo));
-        var leDto = _mapper.Map<TodoDto>(request);
-        return Ok(leDto);
+        return Ok(request);
     }
 }

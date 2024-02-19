@@ -19,6 +19,12 @@ public class TodoRepository : ITodoRepository
         return lesTodo;
     }
 
+    public async Task<Core.Domain.Models.Todo> GetTodoById(Guid id)
+    {
+        var todo = await _dbContext.Todos.Where(t => t.Id == id).FirstOrDefaultAsync();
+        return todo;
+    }
+
     public async Task<bool> AddTodo(Core.Domain.Models.Todo todo)
     {
         await _dbContext.Todos.AddAsync(todo);
@@ -35,6 +41,7 @@ public class TodoRepository : ITodoRepository
         existing.Title = todo.Title;
         existing.Description = todo.Description; 
         existing.IsDone = todo.IsDone;
+        await _dbContext.SaveChangesAsync();
         return existing;
     }
 

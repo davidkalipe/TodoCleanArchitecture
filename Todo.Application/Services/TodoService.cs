@@ -18,6 +18,12 @@ public class TodoService : ITodoService
         return lesTodo;
     }
 
+    public async Task<Core.Domain.Models.Todo> GetTodoById(Guid id)
+    {
+        var todo = await _repo.GetTodoById(id);
+        return todo;
+    }
+
     public async Task<bool> AddTodo(Core.Domain.Models.Todo todo)
     {
         await _repo.AddTodo(todo);

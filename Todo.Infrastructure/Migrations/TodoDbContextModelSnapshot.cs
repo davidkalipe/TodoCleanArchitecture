@@ -32,6 +32,10 @@ namespace Todo.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<byte[]>("ImageContent")
+                        .IsRequired()
+                        .HasColumnType("bytea");
+
                     b.Property<bool>("IsDone")
                         .HasColumnType("boolean");
 

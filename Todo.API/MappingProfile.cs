@@ -8,5 +8,6 @@ public class MappingProfile : Profile
     public MappingProfile()
     {
         CreateMap<Core.Domain.Models.Todo, TodoDto>().ReverseMap();
+        CreateMap<Core.Domain.Models.Todo, TodoCreateDto>().ReverseMap();
     }
 }
