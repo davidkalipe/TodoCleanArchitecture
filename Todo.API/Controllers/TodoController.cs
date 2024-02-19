@@ -34,8 +34,8 @@ public class TodoController : ControllerBase
     {
         var todo = await _mediator.Send(new GetTodoByIdQuery(id));
         var dto = _mapper.Map<TodoDto>(todo);
-        string base64image = dto.ImageContentBase64;
-        byte[] Picture = Convert.FromBase64String(base64image);
+        string base64Image = dto.ImageContentBase64;
+        byte[] Picture = Convert.FromBase64String(base64Image);
         return File(Picture, "image/png");
 
     }
